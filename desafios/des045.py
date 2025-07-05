@@ -11,7 +11,7 @@ jogador = int(input('Escolha uma opção: '))
 computador = random.randint(1,3)
 
 jogada_jogador = lista[jogador - 1] # converte o número 1/2/3 para "Pedra", "Papel" ou "Tesoura"
-jogada_computador = lista[computador - 1]
+jogada_computador = lista[computador - 1] # -1 pois,em uma lista, o primeiro elemento tem índice 0, então se o computador escolher 1, na verdade é o elemento 0
 
 if jogador == computador:
     print('EMPATAMOS! Eu escolhi {} e você {}'.format(jogada_computador, jogada_jogador))
